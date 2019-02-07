@@ -11,7 +11,10 @@ int main ()
     ifstream myfile("pc_under_construction.txt");
     if(myfile.is_open()){
         
-        
+        while(getline(myfile, line)){
+            cout << line << endl;
+        }
+        myfile.close();
     }
     else {
         cout << "Unable to open file\n"; 
