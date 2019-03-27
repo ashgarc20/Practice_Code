@@ -21,11 +21,11 @@ int main()
             cout << "Okay !" << endl;
             // we are going to add a file adding names for 
             // we can assign funny names to user like coke and pepsi
-            //
+            // 
             checkGamerTag = true;
         }
         else if (gamerTags.compare("custom") == 0){
-            cout << "Enter player's name using max 11 characters & only a-z" << endl;
+            cout << "Enter player's name using max 11 characters" << endl;
             // ask the user for name 1 and name 2
             checkGamerTag = true;
             
@@ -38,6 +38,12 @@ int main()
             cin >> player2name;
             // create a code to make sure the user met the requirements
             // using the string length (max 11) and going trough the array characters (a-z)
+            
+            
+            player1name = player1name.substr(0,10); // substr(#,#) limits the character input
+            player2name = player2name.substr(0,10);
+            
+            
             
             cout << "Player one name: "<< player1name << endl;
             cout << "player two name: " << player2name << endl;
