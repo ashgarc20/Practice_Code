@@ -17,11 +17,12 @@ int main()
         
         cin >> gamerTags;
         
+        // Will add default names later //
         if (gamerTags.compare("default") == 0){
             cout << "Okay !" << endl;
             // we are going to add a file adding names for 
             // we can assign funny names to user like coke and pepsi
-            // 
+            
             checkGamerTag = true;
         }
         else if (gamerTags.compare("custom") == 0){
